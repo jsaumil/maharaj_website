@@ -10,11 +10,11 @@ body {
     text-align: center;
     padding: 5px;
     font-size: 14px;
-    color: #b30000;
+    color: #7C0405;
   }
   
   header {
-    background: #750000;
+    background: #7C0405;
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
@@ -93,13 +93,13 @@ body {
   }
   
   .tag.selected {
-    background-color: #750000;
+    background-color: #7C0405;
     color: white;
-    border-color: #750000;
+    border-color: #7C0405;
   }
   
   .proceed-btn {
-    background-color: #750000;
+    background-color: #7C0405;
     color: white;
     text-align: center;
     padding: 15px;
@@ -115,7 +115,7 @@ body {
   }
   
   .proceed-btn:hover {
-    background-color: #5e0000;
+    background-color: #7C0405;
   }
   
   .proceed-btn:disabled {

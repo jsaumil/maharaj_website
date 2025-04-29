@@ -16,7 +16,7 @@
   }
   
   .navbar {
-    background-color: #800000;
+    background-color: #7C0405;
     color: white;
     display: flex;
     justify-content: space-between;
@@ -54,7 +54,7 @@
   }
   
   .contact-btn {
-    background-color: orange;
+    background-color: 7C0405;
     color: white;
     border: none;
     padding: 8px 20px;
@@ -68,7 +68,7 @@
   
   
   .contact-btn:hover {
-    background-color: #e69500;
+    background-color: #7C0405;
   }
 
   .page-title {
@@ -104,7 +104,7 @@
   }
 
   .proceed-btn {
-    background-color: #750000;
+    background-color: #7C0405;
     color: white;
     text-align: center;
     padding: 15px;
@@ -119,5 +119,5 @@
   }
 
   .proceed-btn:hover {
-    background-color: #5e0000;
+    background-color: #7C0405;
   }

@@ -1,58 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    font-family: 'Inter', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #fff;
-  }
+  font-family: 'Poppins', sans-serif;
+}
+
+.topbar {
+  background-color: #FFF3E0;
+  text-align: center;
+  padding: 8px 0;
+  font-size: 14px;
+}
+
+.navbar {
+  background-color: #7C0405;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 50px;
+  position: relative;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 2rem;
+  /* Pushes nav-links to center */
+  flex: 1;
+}
+
+.logo-img{
+  width: 50px;
+  height: 50px;
   
-  .top-bar {
-    background: #fdece2;
-    text-align: center;
-    padding: 5px;
-    font-size: 14px;
-    color: #7C0405;
-  }
-  
-  header {
-    background: #7C0405;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  header nav a {
-    color: white;
-    margin: 0 10px;
-    text-decoration: none;
-  }
-  
-  .contact-button {
-    background: F24E1E;
-    padding: 5px 10px;
-    border-radius: 4px;
-    color: white;
-  }
-  
-  .page-title {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
-    padding: 15px;
-    font-weight: bold;
-    font-size: 18px;
-    position: relative;
-  }
-  
-  .back-arrow {
-    position: absolute;
-    left: 20px;
-    font-size: 20px;
-    cursor: pointer;
-  }
-  
+}
+
+.nav-links {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 30px;
+}
+
+.navbar .nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.3s;
+}
+
+.contact-btn {
+  background-color: #F24E1E;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s;
+  /* Pushes button to far right */
+  margin-left: auto;
+}
+
+
+.contact-btn:hover {
+  background-color: #F24E1E;
+}
+
+.page-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 15px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.back-arrow {
+  position: absolute;
+  left: 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
   .content {
     padding: 30px 40px;
     padding-bottom: 70px;

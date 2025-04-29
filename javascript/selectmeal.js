@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Proceed button action
     proceedBtn.addEventListener('click', () => {
       // Here you would typically submit the form or navigate to next page
-      alert(`Selected Date: ${datePicker.value}\nSelected Meals: ${selectedMeals.join(', ')}`);
-      // window.location.href = "next-page.html";
+      // alert(`Selected Date: ${datePicker.value}\nSelected Meals: ${selectedMeals.join(', ')}`);
+      window.location.href = "selectdish.html";
     });
   });

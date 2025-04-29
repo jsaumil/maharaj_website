@@ -1,0 +1,124 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+  }
+  
+  .top-bar {
+    background: #fdece2;
+    text-align: center;
+    padding: 5px;
+    font-size: 14px;
+    color: #b30000;
+  }
+  
+  header {
+    background: #750000;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+  .contact-button {
+    background: orange;
+    padding: 5px 10px;
+    border-radius: 4px;
+    color: white;
+  }
+  
+  .page-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 18px;
+    position: relative;
+  }
+  
+  .back-arrow {
+    position: absolute;
+    left: 20px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .content {
+    padding: 30px 40px;
+    padding-bottom: 70px;
+  }
+  
+  .content h3 {
+    margin: 25px 0 10px;
+  }
+  
+  select {
+    width: 300px;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    margin-bottom: 30px;
+  }
+  
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .tag {
+    border: 1px solid #aaa;
+    padding: 6px 14px;
+    border-radius: 12px;
+    font-size: 14px;
+    background-color: #f7f7f7;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    user-select: none;
+  }
+  
+  .tag:hover {
+    background-color: #ddd;
+  }
+  
+  .tag.selected {
+    background-color: #750000;
+    color: white;
+    border-color: #750000;
+  }
+  
+  .proceed-btn {
+    background-color: #750000;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    transition: background-color 0.3s;
+  }
+  
+  .proceed-btn:hover {
+    background-color: #5e0000;
+  }
+  
+  .proceed-btn:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }

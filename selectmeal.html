@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Select Date - Book a Chef</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="selectmeal.css" rel="stylesheet">
+</head>
+<body>
+
+  <div class="top-bar">📣 Need a Cook Just Once? We're Coming Soon to Ahmedabad!</div>
+
+  <header>
+    <div><strong style="color: white;">Maharaj Partner</strong></div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Services</a>
+      <a href="#">About</a>
+      <a href="#" class="contact-button">Contact Us</a>
+    </nav>
+  </header>
+
+  <div class="page-title">
+    <span class="back-arrow" onclick="window.history.back()">←</span>
+    Book a Chef
+  </div>
+
+  <div class="content">
+    <h3>Select Dates</h3>
+    <select id="dateSelect">
+      <option selected disabled>select from here</option>
+      <option>Today</option>
+      <option>Tomorrow</option>
+      <option>Custom Date</option>
+    </select>
+
+    <h3>Select Meal Times</h3>
+    <div class="tags" id="mealTags">
+      <div class="tag" data-meal="breakfast">Breakfast</div>
+      <div class="tag" data-meal="lunch">Lunch</div>
+      <div class="tag" data-meal="evening">Evening Snacks</div>
+      <div class="tag" data-meal="dinner">Dinner</div>
+    </div>
+  </div>
+
+  <button class="proceed-btn" id="proceedBtn" disabled>Proceed ➜</button>
+
+  <script src="javascript/selectmeal.js"></script>
+
+</body>
+</html>

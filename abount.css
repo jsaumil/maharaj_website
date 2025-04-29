@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .topbar {
+    background-color: #FFF3E0;
+    text-align: center;
+    padding: 8px 0;
+    font-size: 14px;
+  }
+  
+  .navbar {
+    background-color: #800000;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 50px;
+    position: relative; /* Needed for absolute positioning */
+  }
+  
+  .logo {
+    font-weight: bold;
+    font-size: 2rem;
+    /* Pushes nav-links to center */
+    flex: 1;
+  }
+
+  .logo-img{
+    width: 50px;
+    height: 50px;
+    
+  }
+  
+  .nav-links {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 30px;
+  }
+  
+  .navbar .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: opacity 0.3s;
+  }
+  
+  .contact-btn {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s;
+    /* Pushes button to far right */
+    margin-left: auto;
+  }
+  
+  
+  .contact-btn:hover {
+    background-color: #e69500;
+  }
+  
+  .hero {
+    position: relative;
+  }
+  
+  .hero-img {
+    width: 100%;
+    height: auto;
+    /* object-fit: 20% 50%; */
+  }
+  
+  .hero-text {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    color: white;
+    max-width: 500px;
+  }
+  
+  .hero-text h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+  }
+  
+  .hero-text p {
+    font-size: 18px;
+  }
+  
+  .download-btn {
+    margin-top: 20px;
+    background-color: orange;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .footer {
+    background-color: #800000;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    flex-wrap: wrap;
+  }
+  
+  .footer-section {
+    max-width: 250px;
+  }
+  
+  .footer-section h4 {
+    margin-bottom: 10px;
+  }
+  
+  .footer-section p {
+    margin-bottom: 8px;
+  }
+  
+  .footer-section.install {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* or center if you want it centered */
+  }
+  
+  .store-image {
+    margin-top: 10px;
+    width: 150px; /* adjust size as needed */
+  }
+  

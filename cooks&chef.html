@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cooks & Chef</title>
+  <link href="cooks&chef.css" rel="stylesheet">
+</head>
+<body>
+    <!-- to bar -->
+    <div class="topbar">
+        Need a Cook Just Once? We're Coming Soon to Ahmedabad!
+    </div>
+
+    <!-- navbar -->
+  <header>
+    <nav class="navbar">
+        <div class="logo">Maharaj Partner</div>
+        <div class="nav-links">
+          <a href="main.html">Home</a>
+          <a href="#">Services</a>
+          <a href="about.html">About</a>
+        </div>
+        <button class="contact-btn">Contact Us</button>
+      </nav>
+  </header>
+
+  <div class="page-title">
+    <span class="back-arrow" onclick="goBack()">←</span>
+    Cooks & Chef
+  </div>
+
+  <div class="card-container">
+    <div class="card" onclick="window.location.href='foronetime.html'">
+      <img src="img/bg.jpg" alt="For one meal">
+      <h3>For One Meal</h3>
+      <p>starts 299</p>
+    </div>
+    <div class="card">
+      <img src="img/bg.jpg" alt="For multiple days">
+      <h3>For Multiple Days</h3>
+      <p>starts 999</p>
+    </div>
+    
+  </div>
+  <div class="card-container">
+    <div class="card">
+        <img src="img/bg.jpg" alt="For monthly basis">
+        <h3>For Monthly Basis</h3>
+        <p>starts 2999</p>
+      </div>
+  </div>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-section about">
+      <h3>Maharaj Partner</h3>
+      <p>Serving love through home-style cooking. Trusted chefs, hygienic meals, and instant bookings - all at your doorstep with Maharaj.</p>
+    </div>
+    <div class="footer-section links">
+      <h4>Company</h4>
+      <p>Home</p>
+      <p>About Us</p>
+      <p>Services</p>
+      <p>Blogs</p>
+    </div>
+    <div class="footer-section links">
+      <h4>Help</h4>
+      <p>Customer Support</p>
+      <p>Delivery Details</p>
+      <p>Terms & Conditions</p>
+      <p>Privacy Policy</p>
+    </div>
+    <div class="footer-section install">
+        <h4>Install App</h4>
+        <img src="img/store.png" alt="App Store" class = "store-image">
+      </div>
+  </footer>
+<div class="footer-bottom">
+    © Copyright 2022, All Rights Reserved by Maharaj
+</div>
+
+<script>
+    function goBack() {
+      window.history.back();
+    }
+</script>
+
+</body>
+</html>

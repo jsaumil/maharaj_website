@@ -2,17 +2,18 @@ document.addEventListener('DOMContentLoaded', function() {
     // Select elements
     const mealTags = document.querySelectorAll('.tag');
     const proceedBtn = document.getElementById('proceedBtn');
-    const dateSelect = document.getElementById('dateSelect');
+    const datePicker = document.getElementById('datePicker');
     const backArrow = document.querySelector('.back-arrow');
     
     // Initialize variables
     let selectedMeals = [];
     let isDateSelected = false;
+
+    const today = new Date().toISOString().split('T')[0];
+      datePicker.setAttribute('min', today);
   
     // Back arrow functionality
-    backArrow.addEventListener('click', () => {
-      window.history.back();
-    });
+    backArrow.addEventListener('click', goBack);
   
     // Toggle meal selection
     mealTags.forEach(tag => {
@@ -31,10 +32,17 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   
     // Date selection handler
-    dateSelect.addEventListener('change', (e) => {
-      isDateSelected = e.target.value !== 'select from here';
+    datePicker.addEventListener('change', (e) => {
+      isDateSelected = e.target.value !== '';
       updateProceedButton();
+      
+      // For debugging - you can remove this
+      console.log('Selected date:', e.target.value);
     });
+
+    function goBack() {
+      window.history.back();
+    }
   
     // Update proceed button state
     function updateProceedButton() {
@@ -44,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Proceed button action
     proceedBtn.addEventListener('click', () => {
       // Here you would typically submit the form or navigate to next page
-      alert(`Selected Date: ${dateSelect.value}\nSelected Meals: ${selectedMeals.join(', ')}`);
+      alert(`Selected Date: ${datePicker.value}\nSelected Meals: ${selectedMeals.join(', ')}`);
       // window.location.href = "next-page.html";
     });
   });

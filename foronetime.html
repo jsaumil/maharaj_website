@@ -41,12 +41,17 @@
     <div class="step">✨ Chef cleans the Kitchen and Leaves</div>
   </div>
 
-  <button class="proceed-btn">Proceed ➜</button>
+  <button class="proceed-btn" onclick="proceedToNextPage()">Proceed ➜</button>
 
   <script>
     function goBack() {
       window.history.back();
     }
+
+    function proceedToNextPage() {
+    // Navigate to selectdate.html (or your desired page)
+    window.location.href = "selectmeal.html";
+  }
 </script>
 
 </body>

@@ -116,8 +116,13 @@
     position: fixed;
     bottom: 0;
     left: 0;
+    transition: background-color 0.3s;
   }
 
   .proceed-btn:hover {
     background-color: #7C0405;
+  }
+
+  .proceed-btn:active {
+    transform: scale(0.98);
   }

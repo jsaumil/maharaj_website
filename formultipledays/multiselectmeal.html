@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Select Date - Book a Chef</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <link href="selectmeal.css" rel="stylesheet">
+  <link href="multiselectmeal.css" rel="stylesheet">
 </head>
 <body>
 
@@ -19,9 +19,9 @@
 <nav class="navbar">
     <div class="logo">Maharaj Partner</div>
     <div class="nav-links">
-      <a href="main.html">Home</a>
+      <a href="../main.html">Home</a>
       <a href="#">Services</a>
-      <a href="about.html">About</a>
+      <a href="../about.html">About</a>
     </div>
     <button class="contact-btn">Contact Us</button>
   </nav>
@@ -34,8 +34,12 @@
 
 
   <div class="content">
-    <h3>Select Date</h3>
+    <h3>Select Dates</h3>
+    <div class="date-selection">
     <input type="date" id="datePicker" class="date-input">
+    <button id="addDateBtn" class="add-date-btn">Add Date</button>
+  </div>
+  <div id="selectedDates" class="selected-dates-container"></div>
 
     <h3>Select Meal Times</h3>
     <div class="tags" id="mealTags">
@@ -48,7 +52,7 @@
 
   <button class="proceed-btn" id="proceedBtn" disabled>Proceed ➜</button>
 
-  <script src="javascript/selectmeal.js"></script>
+  <script src="multiselectmeal.js"></script>
 
 </body>
 </html>

@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.topbar {
+  background-color: #FFF3E0;
+  text-align: center;
+  padding: 8px 0;
+  font-size: 14px;
+}
+
+.navbar {
+  background-color: #7C0405;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 50px;
+  position: relative;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 2rem;
+  /* Pushes nav-links to center */
+  flex: 1;
+}
+
+.logo-img{
+  width: 50px;
+  height: 50px;
+  
+}
+
+.nav-links {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 30px;
+}
+
+.navbar .nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.3s;
+}
+
+.contact-btn {
+  background-color: #F24E1E;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s;
+  /* Pushes button to far right */
+  margin-left: auto;
+}
+
+
+.contact-btn:hover {
+  background-color: #F24E1E;
+}
+
+.page-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 15px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.back-arrow {
+  position: absolute;
+  left: 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+  .content {
+    padding: 30px 40px;
+    padding-bottom: 70px;
+  }
+  
+  .content h3 {
+    margin: 25px 0 10px;
+  }
+  
+  select {
+    width: 300px;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    margin-bottom: 30px;
+  }
+
+  .date-input {
+    width: 300px;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    margin-bottom: 30px;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  /* Style the calendar popup (works in most modern browsers) */
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 4px;
+    background-color: #750000;
+  }
+  
+  input[type="date"]::-webkit-calendar-picker-indicator:hover {
+    background-color: #5e0000;
+  }
+  
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .tag {
+    border: 1px solid #aaa;
+    padding: 6px 14px;
+    border-radius: 12px;
+    font-size: 14px;
+    background-color: #f7f7f7;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    user-select: none;
+  }
+  
+  .tag:hover {
+    background-color: #ddd;
+  }
+  
+  .tag.selected {
+    background-color: #7C0405;
+    color: white;
+    border-color: #7C0405;
+  }
+  
+  .proceed-btn {
+    background-color: #7C0405;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    transition: background-color 0.3s;
+  }
+  
+  .proceed-btn:hover {
+    background-color: #7C0405;
+  }
+  
+  .proceed-btn:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }

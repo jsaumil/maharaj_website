@@ -82,15 +82,6 @@
     font-size: 18px;
   }
 
-  .content {
-    padding: 30px 40px;
-    padding-bottom: 70px;
-  }
-  
-  .content h3 {
-    margin: 25px 0 10px;
-  }
-
   .back-arrow {
     position: absolute;
     left: 20px;
@@ -98,61 +89,40 @@
     cursor: pointer;
   }
 
-  select {
-    width: 300px;
-    padding: 0.75rem;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    font-size: 14px;
-    margin-bottom: 2rem;
+  .content {
+    padding: 30px 40px;
   }
 
-  .tags {
-    margin-bottom: 2rem;
+  .content h3 {
+    margin-bottom: 20px;
   }
 
-  .tag {
-    display: inline-block;
-    background-color: #f4f4f4;
-    border: 1px solid #ccc;
-    padding: 6px 12px;
-    border-radius: 12px;
-    font-size: 14px;
-    margin-right: 8px;
-    margin-bottom: 8px;
-    cursor: pointer;
-    transition: all 0.3s ease;
+  .step {
+    font-size: 18px;
+    margin: 10px 0;
+    font-weight: 600;
   }
 
-  .tag.selected {
+  .proceed-btn {
     background-color: #7C0405;
     color: white;
-    border-color: #7C0405;
-  }
-  
-  .tag:hover {
-    background-color: #e0e0e0;
-  }
-
-  .footer-btn {
-    width: 100%;
-    padding: 1rem;
-    background-color: #8B0000;
-    color: white;
-    font-weight: 600;
-    font-size: 16px;
     text-align: center;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 16px;
     border: none;
+    width: 100%;
+    cursor: pointer;
     position: fixed;
     bottom: 0;
     left: 0;
-    cursor: pointer;
     transition: background-color 0.3s;
   }
 
-  .footer-btn:disabled {
-    background-color: #cccccc;
-    cursor: not-allowed;
+  .proceed-btn:hover {
+    background-color: #7C0405;
   }
-  
-  
+
+  .proceed-btn:active {
+    transform: scale(0.98);
+  }

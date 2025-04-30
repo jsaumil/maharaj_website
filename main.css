@@ -1,226 +1,274 @@
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Poppins', sans-serif;
-  }
-  
-  .topbar {
-    background-color: #FFF3E0;
-    text-align: center;
-    padding: 8px 0;
-    font-size: 14px;
-  }
-  
-  .navbar {
-    background-color: #7C0405;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 12px 50px;
-    position: relative; /* Needed for absolute positioning */
-  }
-  
-  .logo {
-    font-weight: bold;
-    font-size: 2rem;
-    /* Pushes nav-links to center */
-    flex: 1;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  .logo-img{
-    width: 50px;
-    height: 50px;
-    
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.topbar {
+  background-color: #FFF3E0;
+  text-align: center;
+  padding: 8px 0;
+  font-size: 14px;
+}
+
+.navbar {
+  background-color: #7C0405;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  position: relative;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.logo-img {
+  width: 50px;
+  height: 50px;
+}
+
+.nav-links {
+  display: none; /* Hidden by default on mobile */
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  background-color: #7C0405;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding: 20px 0;
+  z-index: 100;
+}
+
+.nav-links.active {
+  display: flex;
+}
+
+.navbar .nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.3s;
+}
+
+.contact-btn {
+  background-color: #F24E1E;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.menu-toggle {
+  display: block;
+  cursor: pointer;
+  margin-left: 15px;
+}
+
+.contact-btn:hover {
+  background-color: gray;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero-img {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: cover;
+}
+
+.hero-text {
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  right: 5%;
+  color: white;
+  max-width: 100%;
+  padding: 0 10px;
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.download-btn {
+  background-color: #F24E1E;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.services {
+  padding: 30px 15px;
+  text-align: center;
+}
+
+.services h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  justify-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.service-box {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  aspect-ratio: 1/1;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.service-icon {
+  width: 100%;
+  height: auto;
+  max-height: 150px;
+  object-fit: cover;
+  border-radius: 10%;
+  margin-bottom: 15px;
+}
+
+.service-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.service-price {
+  color: gray;
+  font-size: 14px;
+}
+
+.footer {
+  background-color: #7C0405;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 20px;
+}
+
+.footer-section {
+  max-width: 100%;
+  margin-bottom: 25px;
+}
+
+.footer-section h3, 
+.footer-section h4 {
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+.footer-section p {
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: opacity 0.3s;
+  font-size: 14px;
+}
+
+.store-image {
+  margin-top: 10px;
+  width: 120px;
+  cursor: pointer;
+}
+
+/* Tablet and Desktop Styles */
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
   }
   
   .nav-links {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
     display: flex;
-    gap: 30px;
+    position: static;
+    flex-direction: row;
+    width: auto;
+    background-color: transparent;
+    padding: 0;
+    transform: none;
   }
   
-  .navbar .nav-links a {
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-    transition: opacity 0.3s;
-  }
-  
-  .contact-btn {
-    background-color: #F24E1E;
-    color: white;
-    border: none;
-    padding: 8px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: 500;
-    transition: background-color 0.3s;
-    /* Pushes button to far right */
-    margin-left: auto;
-  }
-  
-  
-  .contact-btn:hover {
-    background-color: gray;
-  }
-  
-  .hero {
-    position: relative;
-  }
-  
-  .hero-img {
-    width: 100%;
-    height: auto;
+  .logo {
+    font-size: 2rem;
   }
   
   .hero-text {
-    position: absolute;
     top: 30%;
     left: 10%;
-    color: white;
+    right: auto;
     max-width: 500px;
+    text-align: left;
   }
   
   .hero-text h1 {
     font-size: 36px;
-    margin-bottom: 15px;
-  }
-  
-  .hero-text p {
-    font-size: 18px;
-    margin-bottom: 20px;
-  }
-  
-  .download-btn {
-    background-color: #F24E1E;
-    color: white;
-    border: none;
-    padding: 12px 24px;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: 500;
-    transition: background-color 0.3s;
-  }
-  
-  .download-btn:hover {
-    background-color: gray;
-  }
-  
-  .services {
-    padding: 50px;
-    text-align: center;
-  }
-  
-  .services h2 {
-    margin-bottom: 30px;
-    font-size: 28px;
   }
   
   .services-grid {
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
-    justify-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .service-box {
-    width: 250px;
-    height: 250px;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
-    /* box-shadow: 0 4px 8px rgba(0,0,0,0.1); */
-  }
-  
-  .service-box:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-    background-color: #f9f9f9;
-  }
-
-  .service-box:active{
-    transform: translateY(0);
-    transition: transform 0.1s;
-  }
-  
-  .service-icon {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 10%;
-    margin-bottom: 20px;
-  }
-  
-  .service-title {
-    font-weight: bold;
-    margin-bottom: 5px;
-    font-size: 18px;
-  }
-  
-  .service-price {
-    color: gray;
-    font-size: 14px;
+    gap: 30px;
   }
   
   .footer {
-    background-color: #7C0405;
-    color: white;
-    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
     padding: 50px;
-    flex-wrap: wrap;
+  }
+  
+  .footer-section {
+    max-width: 200px;
+  }
+}
+
+@media (min-width: 992px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
   }
   
   .footer-section {
     max-width: 250px;
-    margin-bottom: 20px;
   }
-  
-  .footer-section h3, 
-  .footer-section h4 {
-    margin-bottom: 15px;
-    font-size: 18px;
-  }
-  
-  .footer-section p {
-    margin-bottom: 8px;
-    cursor: pointer;
-    transition: opacity 0.3s;
-  }
-  
-  .footer-section p:hover {
-    opacity: 0.8;
-  }
-  
-  .footer-section.install {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  
-  .store-image {
-    margin-top: 10px;
-    width: 150px;
-    cursor: pointer;
-    transition: transform 0.3s;
-  }
-  
-  .store-image:hover {
-    transform: scale(1.05);
-  }
+}

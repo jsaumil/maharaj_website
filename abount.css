@@ -54,7 +54,7 @@
   }
   
   .contact-btn {
-    background-color: 7C0405;
+    background-color: #F24E1E;
     color: white;
     border: none;
     padding: 8px 20px;
@@ -77,8 +77,7 @@
   
   .hero-img {
     width: 100%;
-    height: auto;
-    /* object-fit: 20% 50%; */
+    height: 600px;
   }
   
   .hero-text {
@@ -100,7 +99,7 @@
   
   .download-btn {
     margin-top: 20px;
-    background-color: 7C0405;
+    background-color: #F24E1E;
     border: none;
     padding: 10px 20px;
     font-size: 16px;

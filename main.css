@@ -77,7 +77,7 @@
   
   .hero-img {
     width: 100%;
-    height: auto;
+    height: 600px;
   }
   
   .hero-text {
@@ -223,4 +223,8 @@
   
   .store-image:hover {
     transform: scale(1.05);
+  }
+
+  html {
+    scroll-behavior: smooth;
   }

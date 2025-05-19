@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book a Chef</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link href="selectdish.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- to bar -->
+  <div class="topbar">
+    Need a Cook Just Once? We're Coming Soon to Ahmedabad!
+  </div>
+
+  <!-- navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Maharaj</div>
+      <div class="nav-links">
+        <a href="main.html">Home</a>
+        <a href="main.html#services">Services</a>
+        <a href="about.html">About</a>
+      </div>
+      <button class="contact-btn">Contact Us</button>
+    </nav>
+  </header>
+
+  <div class="page-title">
+    <span class="back-arrow" onclick="goBack()">←</span>
+    Book a Chef
+  </div>
+
+  <!-- Content Section -->
+  <div class="content">
+    <h2>Select No. of people</h2>
+    <select id="peopleSelect">
+      <option value="">Select from here</option>
+      <option value="1-2">1-2</option>
+      <option value="3-5">3-5</option>
+      <option value="6+">6+</option>
+    </select>
+
+    <h2>Select Cuisines</h2>
+    <div class="tags" id="cuisineTags">
+      <span class="tag" data-cuisine="north">North Indian</span>
+      <span class="tag" data-cuisine="chinese">Chinese</span>
+      <span class="tag" data-cuisine="south">South Indian</span>
+      <span class="tag" data-cuisine="thai">Thai</span>
+    </div>
+
+    <h2>Select Dish</h2>
+    <select id="dishSelect">
+      <option value="">Select from here</option>
+      <option value="Paneer Butter Masala">Paneer Butter Masala</option>
+      <option value="Fried Rice">Fried Rice</option>
+      <option value="Idli">Idli</option>
+    </select>
+  </div>
+
+  <!-- Footer Button -->
+  <button class="footer-btn" id="footerBtn" disabled>View Total Bill ➜</button>
+
+  <script src="javascript/selectdish.js"></script>
+</body>
+</html>

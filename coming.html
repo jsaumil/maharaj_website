@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Coming Soon - Ahmedabad</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      /* background: linear-gradient(135deg, #ff6600, #ffcc00); */
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .coming-soon {
+      text-align: center;
+      color: #7C0405;
+      animation: fadeInZoom 1.5s ease-out forwards;
+    }
+
+    .coming-soon h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .coming-soon p {
+      font-size: 1.5rem;
+    }
+
+    @keyframes fadeInZoom {
+      0% {
+        opacity: 0;
+        transform: scale(0.8);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    .float {
+      animation: floatUpDown 3s ease-in-out infinite;
+    }
+
+    @keyframes floatUpDown {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="coming-soon float">
+    <h1>We're Coming Soon to Ahmedabad!</h1>
+    <p>Get ready for an all-new at-home cooking experience.</p>
+  </div>
+
+</body>
+</html>

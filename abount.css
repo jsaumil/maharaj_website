@@ -68,7 +68,7 @@
   
   
   .contact-btn:hover {
-    background-color: #F24E1E;
+    background-color: gray;
   }
   
   .hero {
@@ -96,6 +96,22 @@
   .hero-text p {
     font-size: 18px;
   }
+
+  .download-btn {
+    background-color: #F24E1E;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s;
+  }
+  
+  .download-btn:hover {
+    background-color: gray;
+  }
   
   .download-btn {
     margin-top: 20px;
@@ -106,6 +122,30 @@
     border-radius: 5px;
     cursor: pointer;
   }
+
+    .qr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px; /* adjust as needed */
+    background-color: #f9f9f9; /* optional background */
+  } 
+
+  .survey-link {
+    padding: 12px 24px;
+    background-color: #7C0405;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+  }
+
+  .survey-link:hover {
+    background-color: gray;
+  }
+
 
   .footer {
     background-color: #7C0405;
